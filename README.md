@@ -1,2 +1,2 @@
-# start-api-node
- Initial Structure of a NodeJS Project
+# authentication-jwt-node
+Authentication protocol JWT in NodeJS

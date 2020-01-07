@@ -1,20 +1,19 @@
 import { Router } from 'express';
+
 import UserController from './app/controllers/UserController';
-import authMiddleware from './app/middlewares/auth';
 import AuthController from './app/controllers/AuthController';
+import authMiddleware from './app/middlewares/auth';
 
 const routes = Router();
 
-routes.get('/', (req, res) => res.json('JWT-NODE'));
+routes.get('/', (req, res) => res.json('JWT-API'));
+
 
 routes.post('/users', UserController.store);
-
 routes.post('/login', AuthController.store);
 
 routes.use(authMiddleware);
 
-routes.get('/testeauth', (req, res) =>
-  res.json({ user: req.userId, result: 'Authenticated' })
-);
+routes.get('/test-auth', (req, res) => res.json({ logged: req.userId, result: 'JWT-API-AUTH' }));
 
 export default routes;
