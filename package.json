@@ -1,9 +1,7 @@
 {
-  "name": "api-scrapbook-struture",
+
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/marcelo-growdev/api-scrapbook-struture.git",
-  "author": "Marcelo Eltz <marcelo@growdev.com.br>",
   "license": "MIT",
   "scripts": {
     "build": "sucrase ./src -d ./dist --transforms imports",
