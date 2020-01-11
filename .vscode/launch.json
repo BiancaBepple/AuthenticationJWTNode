@@ -11,8 +11,8 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "restart": true,
-            "protocol": "inspector"
+            "protocol": "inspector",
+            "restart": true
         }
     ]
 }
